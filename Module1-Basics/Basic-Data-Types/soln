@@ -1,0 +1,46 @@
+Basic Data Types 100 XP
+# What is the answer to the universe?
+my_numeric <- 42
+as.integer(my_numeric)
+
+# The quotation marks indicate that the variable is of type character
+my_character <- "forty-two"
+
+# Change the value of my_logical
+my_logical <- TRUE
+my_logical <- FALSE
+--------------------------------------------------------------------
+Back to Apples and Oranges 100 XP
+# Assign a value to the variable called my_apples
+my_apples <- 5 
+
+# Print out the value of my_apples
+my_apples       
+
+# Assign a value to the variable my_oranges and print it out
+my_oranges <- 6 
+my_oranges 
+
+# New variable that contains the total amount of fruit
+my_fruit <- my_apples + my_oranges 
+my_fruit
+---------------------------------------------------------------------
+What's that data type? 50 XP
+option(d)a's class is numeric, b is a character, c is a logical.
+---------------------------------------------------------------------
+Coercion: Taming your data 100 XP
+# Create variables var1, var2 and var3
+var1 <- TRUE
+var1_char <- as.character(var1)
+is.character(var1_char)
+
+var2 <- 0.3
+var2_log<-as.logical(var2)
+class(var2_log)
+
+var3 <- "i"
+var3_num<-as.numeric(var3)
+-----------------------------------------------------------------------
+Coercion for the sake of cleaning
+Self Explanatory question
+------------------------------------------------------------------------
