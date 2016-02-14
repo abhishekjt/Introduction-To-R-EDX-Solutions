@@ -1,0 +1,95 @@
+
+
+    Vector to factor 100 XP
+    # Definition of hand_vector
+hand_vector <- c("Right", "Left", "Left", "Right", "Left")
+
+# Convert hand_vector to a factor: hand_factor
+hand_factor <- factor(hand_vector)
+
+# Display the structure of hand_factor
+str(hand_factor)
+-----------------------------------------------------------------------
+    Factor levels 100 XP
+    # Definition of survey_vector
+survey_vector <- c("R", "L", "L", "R", "R")
+
+# Encode survey_vector as a factor with the correct names: survey_factor
+survey_factor <- factor(survey_vector,levels=c("R","L"),labels=c("Right","Left"))
+
+# Print survey_factor
+print(survey_factor)
+------------------------------------------------------------------------------
+    Summarizing a factor 100 XP
+    # Defintion of survey_vector and survey_factor
+survey_vector <- c("R", "L", "L", "R", "R")
+survey_factor <- factor(survey_vector, levels = c("R", "L"), labels = c("Right", "Left"))
+
+# Summarize survey_vector
+summary(survey_vector)
+
+
+# Summarize survey_factor
+summary(survey_factor)
+---------------------------------------------------------------------------------
+    Nominal versus Ordinal, Unordered versus Ordered 100 XP
+    # Definition of animal_vector and temperature_vector
+animal_vector <- c("Elephant", "Giraffe", "Donkey", "Horse")
+temperature_vector <- c("High", "Low", "High", "Low", "Medium")
+
+# Convert animal_vector to a factor: animal_factor
+animal_factor <- factor(animal_vector)
+
+# Encode temperature_vector as a factor: temperature_factor
+temperature_factor <- factor(temperature_vector,ordered = TRUE,levels=c("Low","Medium","High"))
+
+# Print out animal_factor and temperature_factor
+print(animal_factor)
+print(temperature_factor)
+--------------------------------------------------------------------------------------------
+    Left better than right? 100 XP
+    # Definition of survey_vector and survey_factor
+survey_vector <- c("R", "L", "L", "R", "R")
+survey_factor <- factor(survey_vector, levels = c("R", "L"), labels = c("Right", "Left"))
+
+# First element from survey_factor: right
+right<-survey_factor[length(survey_factor)]
+
+# Second element from survey_factor: left
+left<-survey_factor[2]
+
+# Right 'greater than' left?
+right>left
+---------------------------------------------------------------------------------------------
+    Ordered factors 100 XP
+    # Create speed_vector
+speed_vector<-c("OK","Slow","Slow","OK","Fast")
+-----------------------------------------------------------------------------------------------
+    Ordered factors (2) 100 XP
+    # Create speed_vector
+speed_vector <- c("OK", "Slow", "Slow", "OK", "Fast") 
+
+# Convert speed_vector to ordered speed_factor
+speed_factor<- factor(speed_vector,ordered=TRUE,levels=c("Slow","OK","Fast"))
+
+# Print speed_factor
+print(speed_factor)
+
+# Summarize speed_factor
+summary(speed_factor)
+----------------------------------------------------------------------------------------------------
+    Comparing ordered factors 100 XP
+    # Definition of speed_vector and speed_factor
+speed_vector <- c("Fast", "Slow", "Slow", "Fast", "Ultra-fast")
+factor_speed_vector <- factor(speed_vector, ordered = TRUE, levels = c("Slow", "Fast", "Ultra-fast"))
+
+# Compare DA2 with DA5: compare_them
+compare_them <- factor_speed_vector[2]>factor_speed_vector[5]
+
+# Print compare_them: Is DA2 faster than DA5?
+print(compare_them)
+-----------------------------------------------------------------------------------------------------
+Flying high in factor space 200 XP
+  This problem can be solved using previous concepts :)
+--------------------------------------------------------------------------------------------------------
+
